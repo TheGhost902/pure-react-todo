@@ -1,0 +1,32 @@
+.main-board {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid black;
+    margin: 10px;
+
+    .note {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+        box-shadow: 0 0 10px #ddd;
+        max-width: 300px;
+        min-height: 40px;
+
+        p {
+            overflow: hidden;
+        }
+
+        .note-delete-button {
+            background-color: #ffbaba;
+            border: none;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &:hover {
+                box-shadow: 0 0 2px black;
+            }
+        }
+    }
+}
